@@ -73,6 +73,10 @@ mv mesg.temp messages # 变为新的log目录.
 #* 不再需要了,使用上边的方法更安全.
 
 cat /dev/null > wtmp # ': > wtmp' 和 '> wtmp'具有相同的作用
+rm -rf *.gz 
+rm -rf *.log
+rm -rf *.log.*
+
 echo "Logs cleaned up."
 
 exit 0
